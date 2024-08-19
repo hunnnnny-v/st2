@@ -1,0 +1,47 @@
+.home {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #fff;
+}
+
+.headerContainer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(209, 209, 209, 0.5); /* Semi-transparent background */
+  border-radius: 10px;
+}
+
+.headerContainer h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.headerContainer p {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.orderButton {
+  background-color: #e0a795; /* Vibrant orange */
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.orderButton:hover {
+  background-color: #ca7c5c; /* Darker orange */
+  transform: scale(1.05);
+}

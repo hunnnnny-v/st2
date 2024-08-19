@@ -1,0 +1,70 @@
+/* Navigation Menu Styles */
+.navigation-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-menu li {
+  margin: 0px 20px;
+}
+
+.navigation-menu li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem; /* Adjust font size if needed */
+  font-weight: 500; /* Adjust font weight if needed */
+  position: relative;
+  padding: 5px 0;
+  transition: color 0.3s, transform 0.3s;
+  outline: none; /* Remove default outline */
+}
+
+.navigation-menu li a.active {
+  color: goldenrod !important;
+  font-weight: bold !important;
+}
+
+/* Hover and Focus Effects */
+.navigation-menu li a:hover,
+.navigation-menu li a:focus {
+  color: goldenrod;
+  transform: translateY(-3px);
+}
+
+.navigation-menu li a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: goldenrod;
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+
+.navigation-menu li a:hover::before,
+.navigation-menu li a.active::before {
+  transform: scaleX(1);
+}
+
+/* Mobile View Styles */
+.mobile-navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-navigation li {
+  margin-top: 20px;
+}
+
+.mobile-navigation li a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: black;
+}
